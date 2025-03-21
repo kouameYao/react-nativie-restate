@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Image, TextInput } from "react-native";
+import { useLocalSearchParams, router, usePathname } from "expo-router";
 import { useDebouncedCallback } from "use-debounce";
 
 import icons from "@/constants/icons";
-import { useLocalSearchParams, router, usePathname } from "expo-router";
 
 const Search = () => {
   const path = usePathname();
